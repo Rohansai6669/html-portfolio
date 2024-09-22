@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-cart</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header style="background-color: white;">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="index.html">
+                <img src="path_to_logo_image" alt="Logo">
+            </a>
+            </div>
+            <div class="navbar-search">
+                <select class="search-category">
+                    <option value="all">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="home">Home</option>
+                    <!-- Add more categories as needed -->
+                </select>
+                <input type="text" class="search-input" placeholder="Search for products...">
+                <button class="search-button">Search</button>
+            </div>
+            <div class="navbar-icons">
+                <a href="./AccountPage.html" class="navbar-icon">
+                    <img src="path_to_account_icon" alt="Account">
+                </a>
+                <a href="wishlist_page_url" class="navbar-icon">
+                    <img src="path_to_wishlist_icon" alt="Wishlist">
+                </a>
+                <a href="./CartPage.html" class="navbar-icon">
+                    <img src="path_to_cart_icon" alt="Cart">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+       <!-- <img src="hero-banner.jpg" alt="Hero Image"/>-->
+        <div class="hero-text">
+            <h1>Splash into Savings!</h1>
+            <p>Rainy Season Sale - Up to 50% Off on Selected Items</p>
+           <div><a href="shop" class="cta-button">Shop Now</a></div> 
+        </div>
+        <div class="pro-img">
+            <img src="50-off.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="featured-categories" id="shop">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category-item">
+                <img src="fashion.jpeg" alt="Category 1">
+                <a href="#">Fashion</a>
+            </div>
+            <div class="category-item">
+                <img src="electronics.jpeg" alt="Category 2">
+                <a href="#">Electronics</a>
+            </div>
+            
+            <div class="category-item">
+                <img src="furniture.jpg" alt="Category 3">
+                <a href="#">Furniture</a>
+            </div>
+            <div class="category-item">
+                <img src="appliancess.jpg" alt="Category 3">
+                <a href="#">Appliances</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers -->
+    <section class="best-sellers">
+        <h2>Best Sellers</h2>
+        <div class="grid-container">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <img src="proto.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">Product Name 1</h2>
+                    <p class="product-price">$99.99</p>
+                    <div class="product-buttons">
+                        <button class="wishlist-button" onclick="toggleWishlist(this)"></button>
+                        <button class="cart-button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="proto.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">Product Name 2</h2>
+                    <p class="product-price">$89.99</p>
+                    <div class="product-buttons">
+                        <button class="wishlist-button" onclick="toggleWishlist(this)"></button>
+                        <button class="cart-button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="proto.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">Product Name 3</h2>
+                    <p class="product-price">$79.99</p>
+                    <div class="product-buttons">
+                        <button class="wishlist-button" onclick="toggleWishlist(this)"></button>
+                        <button class="cart-button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <img src="proto.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">Product Name 4</h2>
+                    <p class="product-price">$69.99</p>
+                    <div class="product-buttons">
+                        <button class="wishlist-button" onclick="toggleWishlist(this)"></button>
+                        <button class="cart-button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+
+    <!-- Current Promotions -->
+    <section class="current-promotions">
+        <h2>Current Promotions</h2>
+        <div class="promotional-banners">
+            <div class="promotion">
+                <h2>Summer Sale - Up to 50% Off!</h2>
+                <p>Get ready for summer with our hottest deals of the season! Enjoy discounts of up to 50% on select items. Hurry, these offers won’t last long!</p>
+            </div>
+            <div class="promotion">
+                <h2>Buy One, Get One Free!</h2>
+                <p>For a limited time only, take advantage of our Buy One, Get One Free promotion on all our apparel and accessories. Don’t miss out on this incredible offer!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="new-arrivals">
+        <h2>New Arrivals</h2>
+            <!-- Product cards here -->
+            <div class="grid-container">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <img src="proto.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <h2 class="product-title">Product Name 1</h2>
+                        <p class="product-price">$99.99</p>
+                        <div class="product-buttons">
+                            <button class="wishlist-button" onclick="toggleWishlist(this)"></button>
+                            <button class="cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <img src="proto.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <h2 class="product-title">Product Name 2</h2>
+                        <p class="product-price">$89.99</p>
+                        <div class="product-buttons">
+                            <button class="wishlist-button" onclick="toggleWishlist(this)"></button>
+                            <button class="cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <img src="proto.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <h2 class="product-title">Product Name 3</h2>
+                        <p class="product-price">$79.99</p>
+                        <div class="product-buttons">
+                            <button class="wishlist-button" onclick="toggleWishlist(this)"></button>
+                            <button class="cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Product Card 4 -->
+                <div class="product-card">
+                    <img src="proto.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <h2 class="product-title">Product Name 4</h2>
+                        <p class="product-price">$69.99</p>
+                        <div class="product-buttons">
+                            <button class="wishlist-button" onclick="toggleWishlist(this)"></button>
+                            <button class="cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            
+            
+        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Customer Support</a>
+            <a href="#">FAQs</a>
+            <a href="#">Shipping Information</a>
+            <a href="#">Returns</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+        <div class="contact-info">
+            <p>Email: support@mystore.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 E-commerce St, Shopsville, USA</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
